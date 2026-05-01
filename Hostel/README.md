@@ -1,8 +1,6 @@
 # Hostel Management System
 
----
-
-## 📁 Files In This Folder
+## Files In This Folder
 
 ```
 hostel-templates/
@@ -11,17 +9,14 @@ hostel-templates/
 ├── base-dashboard.html    ← Use this for: all pages after login
 │
 ├── css/
-│   └── style.css          ← Shared styles — DO NOT edit without telling the team
+│   └── style.css          ← Shared styles — DO NOT edit without telling the ADMIN
 │
 ├── js/
-│   └── main.js            ← Shared JS — DO NOT edit without telling the team
-│
+│   └── main.js            ← Shared JS — DO NOT edit without telling the ADMIN
 └── images/                ← Put all images here
 ```
 
----
-
-## 🚀 How To Start Your Page
+## How To Start Your Page
 
 ### If your page is BEFORE login (Home, Login, Register):
 
@@ -42,21 +37,19 @@ hostel-templates/
 6. Build your content inside `<main>`
 7. Keep the topbar and sidebar exactly as they are
 
----
+## Who Builds What
 
-## 👥 Who Builds What
-
-| Member | Template to use     | Pages                                       |
-| ------ | ------------------- | ------------------------------------------- |
-| [Name] | base-public.html    | `index.html`, `login.html`, `register.html` |
-| [Name] | base-dashboard.html | `student-dashboard.html`, `profile.html`    |
-| [Name] | base-dashboard.html | `rooms.html`, `book-room.html`              |
-| [Name] | base-dashboard.html | `booking-status.html`, `payment.html`       |
-| [Name] | base-dashboard.html | `complaints.html`                           |
+| Member          | Template to use     | Pages                                                |
+| --------------- | ------------------- | ---------------------------------------------------- |
+| [HeisDonne]     | base-public.html    | `index.html`, `login.html`, `student-dashboard.html` |
+| [omow665]       | base-dashboard.html | `register.html`, `profile.html`                      |
+| [kukupeter2009] | base-dashboard.html | `rooms.html`, `book-room.html`                       |
+| [unknown]       | base-dashboard.html | `booking-status.html`, `payment.html`                |
+| [unknown]       | base-dashboard.html | `complaints.html`                                    |
 
 ---
 
-## 🎨 Useful CSS Classes
+## Useful CSS Classes
 
 ### Buttons
 
@@ -120,17 +113,16 @@ hostel-templates/
 
 ---
 
-## ✅ Before You Submit Your Page
+## Before You Submit Your Page
 
 - [ ] Page opens in browser without errors
 - [ ] Title tag is updated
 - [ ] Sidebar active link is correct (dashboard pages)
 - [ ] Navbar and footer/sidebar are unchanged
-- [ ] All amounts show ₦ not RM or $
+- [ ] All amounts show ₦ not $
 - [ ] Page looks good on mobile (resize browser to check)
 - [ ] Images are in the `/images/` folder
 
 ---
 
-_Bootstrap 5 · Bootstrap Icons · Inter Font_  
-_Group [Number] — [University Name] · 2026_
+### IF YOU ARE CONFUSED, LET ME KNOW SO I CLEAR THE CONFUSION.

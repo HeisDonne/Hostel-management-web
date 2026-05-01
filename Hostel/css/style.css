@@ -166,7 +166,7 @@ img { max-width: 100%; display: block; }
 
 /* ── Public Footer ── */
 .pub-footer {
-  background: var(--navy-dark);
+  background: #2d2d2d;
   padding: 44px 0 20px;
   color: rgba(255,255,255,0.6);
 }
@@ -207,7 +207,7 @@ img { max-width: 100%; display: block; }
 .pub-footer-copy { font-size: 11px; color: rgba(255,255,255,0.3); }
 
 /* ── Login / Register Form Pages ── */
-.pub-auth-wrap {
+.login-background {
   min-height: calc(100vh - 54px - 60px);
   display: flex;
   align-items: center;
@@ -215,7 +215,7 @@ img { max-width: 100%; display: block; }
   padding: 40px 20px;
   background: var(--bg);
 }
-.pub-auth-card {
+.login-section {
   background: var(--white);
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -224,7 +224,7 @@ img { max-width: 100%; display: block; }
   max-width: 420px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.06);
 }
-.pub-auth-icon {
+.logo-icon {
   width: 52px; height: 52px;
   background: var(--navy-dark);
   border-radius: 10px;
@@ -234,14 +234,14 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
   margin: 0 auto 16px;
 }
-.pub-auth-title {
+.logo-title {
   font-size: 18px;
   font-weight: 700;
   text-align: center;
   color: var(--text);
   margin-bottom: 4px;
 }
-.pub-auth-sub {
+.login-intro {
   font-size: 12.5px;
   color: var(--text-muted);
   text-align: center;
@@ -249,14 +249,14 @@ img { max-width: 100%; display: block; }
 }
 
 /* ── Shared Form Styles ── */
-.form-label {
+.logs-label {
   font-size: 12px;
   font-weight: 500;
   color: #444;
   margin-bottom: 5px;
   display: block;
 }
-.form-control, .form-select {
+.logs-control, .form-select {
   border: 1.5px solid var(--border);
   border-radius: 6px;
   padding: 9px 12px;
@@ -267,14 +267,14 @@ img { max-width: 100%; display: block; }
   background: var(--white);
   transition: border-color 0.2s;
 }
-.form-control:focus, .form-select:focus {
+.logs-control:focus, .form-select:focus {
   border-color: var(--blue);
   outline: none;
   box-shadow: 0 0 0 3px rgba(25,118,210,0.1);
 }
-.form-control::placeholder { color: #bbb; font-size: 12.5px; }
+.logs-control::placeholder { color: #bbb; font-size: 12.5px; }
 
-.btn-block {
+.login-btn {
   width: 100%;
   background: var(--blue);
   color: var(--white);
@@ -287,7 +287,7 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   transition: background 0.2s;
 }
-.btn-block:hover { background: var(--navy-light); }
+.login-btn:hover { background: var(--navy-light); }
 
 /* ================================================
    DASHBOARD PAGES (base-dashboard.html)
