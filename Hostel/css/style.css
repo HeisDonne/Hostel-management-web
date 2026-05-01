@@ -206,8 +206,8 @@ img { max-width: 100%; display: block; }
 .pub-footer-divider { border-color: rgba(255,255,255,0.1); margin: 24px 0 16px; }
 .pub-footer-copy { font-size: 11px; color: rgba(255,255,255,0.3); }
 
-/*Login / Register Form Page */
-.login-background{
+/* ── Login / Register Form Pages ── */
+.login-background {
   min-height: calc(100vh - 54px - 60px);
   display: flex;
   align-items: center;
@@ -248,7 +248,7 @@ img { max-width: 100%; display: block; }
   margin-bottom: 24px;
 }
 
-/* Shared Form Styles */
+/* ── Shared Form Styles ── */
 .logs-label {
   font-size: 12px;
   font-weight: 500;
@@ -287,7 +287,7 @@ img { max-width: 100%; display: block; }
   cursor: pointer;
   transition: background 0.2s;
 }
-.loginn-btn:hover { background: var(--navy-light); }
+.login-btn:hover { background: var(--navy-light); }
 
 /*
    DASHBOARD PAGES (base-dashboard.html)
