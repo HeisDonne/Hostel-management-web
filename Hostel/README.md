@@ -39,13 +39,13 @@ hostel-templates/
 
 ## Who Builds What
 
-| Member      | Template to use     | Pages                                                |
-| ----------- | ------------------- | ---------------------------------------------------- |
-| [HeisDonne] | base-public.html    | `index.html`, `login.html`, `student-dashboard.html` |
-| [omow665]   | base-dashboard.html | `register.html`, `profile.html`                      |
-| [unknown]   | base-dashboard.html | `rooms.html`, `book-room.html`                       |
-| [unknown]   | base-dashboard.html | `booking-status.html`, `payment.html`                |
-| [unknown]   | base-dashboard.html | `complaints.html`                                    |
+| Member              | Template to use     | Pages                                                |
+| ------------------- | ------------------- | ---------------------------------------------------- |
+| [HeisDonne]         | base-public.html    | `index.html`, `login.html`, `student-dashboard.html` |
+| [omow665]           | base-dashboard.html | `register.html`, `profile.html`                      |
+| [peterkuku2009-bip] | base-dashboard.html | `rooms.html`, `book-room.html`                       |
+| [unknown]           | base-dashboard.html | `booking-status.html`, `payment.html`                |
+| [unknown]           | base-dashboard.html | `complaints.html`                                    |
 
 ---
 
