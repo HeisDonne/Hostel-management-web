@@ -1,12 +1,12 @@
-/* ================================================
-   UniHost — Hostel Management System
-   Shared Stylesheet — matches the provided design
-   ================================================ */
+/* 
+   Hostel Management System
+   Shared Stylesheet 
+   */
 
-/* ── Google Fonts ── */
+/*Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
-/* ── CSS Variables ── */
+/* CSS Variables */
 :root {
   --navy:         #1a237e;
   --navy-dark:    #0d1757;
@@ -31,19 +31,19 @@
   --font:         'Inter', sans-serif;
 }
 
-/* ── Reset ── */
+/* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font); font-size: 14px; color: var(--text); background: var(--bg); }
 a { text-decoration: none; color: inherit; }
 img { max-width: 100%; display: block; }
 
-/* ================================================
+/* 
    PUBLIC PAGES (base-public.html)
    index.html, login.html, register.html
-   ================================================ */
+  */
 
-/* ── Public Navbar ── */
+/* Public Navbar */
 .pub-navbar {
   background: var(--navy-dark);
   padding: 0 24px;
@@ -90,7 +90,7 @@ img { max-width: 100%; display: block; }
 }
 .pub-btn-login:hover { background: var(--navy-light); color: var(--white); }
 
-/* ── Public Hero ── */
+/* Public Hero*/
 .pub-hero {
   background: var(--navy-dark);
   color: var(--white);
@@ -141,7 +141,7 @@ img { max-width: 100%; display: block; }
 }
 .pub-btn-outline:hover { background: rgba(255,255,255,0.1); color: var(--white); }
 
-/* ── Public Features Section ── */
+/* Public Features Section */
 .pub-features {
   background: var(--white);
   padding: 52px 0;
@@ -164,7 +164,7 @@ img { max-width: 100%; display: block; }
 .pub-feature-card h5 { font-size: 14px; font-weight: 600; margin-bottom: 6px; }
 .pub-feature-card p  { font-size: 12.5px; color: var(--text-muted); line-height: 1.6; }
 
-/* ── Public Footer ── */
+/* Public Footer*/
 .pub-footer {
   background: #2d2d2d;
   padding: 44px 0 20px;
@@ -267,7 +267,7 @@ img { max-width: 100%; display: block; }
   background: var(--white);
   transition: border-color 0.2s;
 }
-.logs-control:focus, .form-select:focus {
+.logs-control:focus, .logs-select:focus {
   border-color: var(--blue);
   outline: none;
   box-shadow: 0 0 0 3px rgba(25,118,210,0.1);
@@ -289,12 +289,12 @@ img { max-width: 100%; display: block; }
 }
 .login-btn:hover { background: var(--navy-light); }
 
-/* ================================================
+/*
    DASHBOARD PAGES (base-dashboard.html)
    student-dashboard, rooms, booking, payment, etc.
-   ================================================ */
+   */
 
-/* ── Layout ── */
+/* Layout */
 .dash-body { background: var(--bg); }
 
 .dash-topbar {
@@ -358,14 +358,14 @@ img { max-width: 100%; display: block; }
 }
 .dash-username { font-size: 13px; color: var(--white); font-weight: 500; }
 
-/* ── Layout Wrapper ── */
+/* Layout Wrapper*/
 .dash-layout {
   display: flex;
   margin-top: var(--topbar-h);
   min-height: calc(100vh - var(--topbar-h));
 }
 
-/* ── Sidebar ── */
+/* Sidebar*/
 .dash-sidebar {
   width: var(--sidebar-w);
   background: var(--navy-dark);
@@ -409,7 +409,7 @@ img { max-width: 100%; display: block; }
 .dash-logout { color: rgba(255,100,100,0.8) !important; }
 .dash-logout:hover { color: #ff6b6b !important; }
 
-/* ── Main Content Area ── */
+/*Main Content Area*/
 .dash-main {
   margin-left: var(--sidebar-w);
   flex: 1;
@@ -417,7 +417,7 @@ img { max-width: 100%; display: block; }
   min-height: calc(100vh - var(--topbar-h));
 }
 
-/* ── Page Header ── */
+/* Page Header */
 .dash-page-header {
   display: flex;
   justify-content: space-between;
@@ -435,7 +435,7 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
 }
 
-/* ── Dashboard Buttons ── */
+/* Dashboard Buttons */
 .dash-btn-primary {
   background: var(--blue);
   color: var(--white);
@@ -460,7 +460,7 @@ img { max-width: 100%; display: block; }
 }
 .dash-btn-outline:hover { background: var(--blue); color: var(--white); }
 
-/* ── Stat Cards ── */
+/* Stat Cards */
 .dash-stat-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -489,7 +489,7 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 
-/* ── Cards ── */
+/* Cards */
 .dash-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -509,7 +509,7 @@ img { max-width: 100%; display: block; }
 }
 .dash-card-body { padding: 18px; }
 
-/* ── Tables ── */
+/* Tables */
 .dash-table {
   width: 100%;
   border-collapse: collapse;
@@ -539,7 +539,7 @@ img { max-width: 100%; display: block; }
 }
 .dash-table tbody td:first-child { font-weight: 500; color: var(--text); }
 
-/* ── Status Badges ── */
+/* Status Badges*/
 .badge-pending  { background: var(--pending-bg);  color: var(--pending);  font-size: 11px; padding: 3px 10px; border-radius: 100px; font-weight: 500; }
 .badge-approved { background: var(--success-bg);  color: var(--success);  font-size: 11px; padding: 3px 10px; border-radius: 100px; font-weight: 500; }
 .badge-rejected { background: var(--danger-bg);   color: var(--danger);   font-size: 11px; padding: 3px 10px; border-radius: 100px; font-weight: 500; }
@@ -586,7 +586,7 @@ img { max-width: 100%; display: block; }
 }
 .room-card-btn:hover { background: var(--navy-light); }
 
-/* ── Quick Action Cards (dashboard) ── */
+/* Quick Action Cards (dashboard)*/
 .quick-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -606,7 +606,7 @@ img { max-width: 100%; display: block; }
 }
 .quick-card-label { font-size: 12px; font-weight: 500; color: var(--text); }
 
-/* ── Responsive ── */
+/*Responsive*/
 @media (max-width: 991px) {
   .dash-sidebar { 
     transform: translateX(-100%); 
