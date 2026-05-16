@@ -5,8 +5,8 @@
 ```
 hostel-templates/
 │
-├── base-public.html       ← Use this for: index, login, register
-├── base-dashboard.html    ← Use this for: all pages after login
+├── base-public.html       ← Use this for: index, login, register Please
+├── base-dashboard.html    ← Use this for: all pages after login Please
 │
 ├── css/
 │   └── style.css          ← Shared styles — DO NOT edit without telling the ADMIN
@@ -39,20 +39,21 @@ hostel-templates/
 
 ## Who Builds What
 
-| Member      | Template to use     | Pages                                                |
-| ----------- | ------------------- | ---------------------------------------------------- |
-| [HeisDonne] | base-public.html    | `index.html`, `login.html`, `student-dashboard.html` |
-| [omow665]   | base-dashboard.html | `register.html`, `profile.html`                      |
-| [HeisDonne] | base-dashboard.html | `rooms.html`, `book-room.html`                       |
-| [unknown]   | base-dashboard.html | `booking-status.html`, `payment.html`                |
-| [unknown]   | base-dashboard.html | `complaints.html`                                    |
+| Member      | Template to use     | Pages                                               |
+| ----------- | ------------------- | --------------------------------------------------- |
+| [HeisDonne] | base-public.html    | `index.html`, `login.html`, `studentdashboard.html` |
+| [HeisDonne] | base-dashboard.html | `profile.html`                                      |
+| [HeisDonne] | base-dashboard.html | `rooms.html`, `book-room.html`                      |
+| [unknown]   | base-dashboard.html | `payment.html`                                      |
+| [unknown]   | base-dashboard.html | `complaints.html`                                   |
 
 ## Who contributed
 
-| Member | Task performed
-| 1. Fikile Yunus | Pictures of rooms and bathroom
-| 2. Omoruyi Victor | School logo and contact address
-| 3. Babatunde Elizabeth | Hostel blocks and Prices
+| Member                 | Task performed                  |
+| ---------------------- | ------------------------------- |
+| 1. Fikile Yunus        | Pictures of rooms and bathroom  |
+| 2. Omoruyi Victor      | School logo and contact address |
+| 3. Babatunde Elizabeth | Hostel blocks and Prices        |
 
 ---
 
@@ -132,4 +133,4 @@ hostel-templates/
 
 ---
 
-### IF YOU ARE CONFUSED, LET ME KNOW SO I CLEAR THE CONFUSION.
+### IF YOU ARE CONFUSED, LET ME KNOW SO I CLEAR THE CONFUSION. THANKS

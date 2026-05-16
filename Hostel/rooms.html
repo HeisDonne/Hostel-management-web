@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Rooms</title>
+  <title>Rooms - Lagos State University of Education Hostel</title>
   <link rel="icon" type="image/png" href="images/logo.jpg" />
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
       <!-- Brand -->
       <a href="studentdashboard.html" class="dash-brand">
         <div class="dash-brand-icon"><img src="images/logo.jpg" alt="School Logo" style="width:32px; height:32px; object-fit:contain;" /></div>
-        <span>LASUED Hostel System</span>
+        <span>LASUED Hostel</span>
       </a>
     </div>
     <!-- Mobile Sidebar Toggle -->
@@ -38,10 +38,12 @@
         <i class="bi bi-bell"></i>
       </button>
       <!-- User Profile -->
+       <a href="profile.html" class="dash-user">
       <div class="dash-user">
         <div class="dash-avatar">FV</div>
         <span class="dash-username">Fiktor Vayo</span>
         <i class="bi bi-chevron-down" style="font-size:10px;"></i>
+      </a>
       </div>
     </div>
   </header>
@@ -69,19 +71,15 @@
           <i class="bi bi-door-open"></i>
           <span>Available Rooms</span>
         </a>
-        <a href="book-room.html" class="dash-nav-link">
+        <a href="#" class="dash-nav-link">
           <i class="bi bi-calendar-check"></i>
           <span>Room Booking</span>
         </a>
-        <a href="booking-status.html" class="dash-nav-link">
-          <i class="bi bi-clipboard-check"></i>
-          <span>Booking Status</span>
-        </a>
-        <a href="payment.html" class="dash-nav-link">
+        <a href="#" class="dash-nav-link">
           <i class="bi bi-credit-card"></i>
           <span>Payment</span>
         </a>
-        <a href="complaints.html" class="dash-nav-link">
+        <a href="#" class="dash-nav-link">
           <i class="bi bi-chat-square-text"></i>
           <span>Complaints</span>
         </a>
@@ -159,7 +157,7 @@
     data-title="Block A — Room 101"
     data-block="Block A"
     data-room="Room 101"
-    data-type="Single"
+    data-location="School Campus"
     data-capacity="1 Person"
     data-price="₦85,000 / session"
     data-img="images/room1.jpeg"
@@ -172,7 +170,7 @@
     </div>
     <div class="room-card-body">
       <div class="room-card-title">Block A — Room 101</div>
-      <div class="room-card-meta">Type: Single</div>
+      <div class="room-card-meta">location: School Campus</div>
       <div class="room-card-meta">Capacity: 1</div>
       <div class="room-card-price">₦85,000 / session</div>
       <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
@@ -183,12 +181,12 @@
     <!-- Room Card 2 -->
     <div class="col-md-4">
   <div class="room-card"
-    data-title="Block B — Room 203"
-    data-block="Block B"
+    data-title="Block C — Room 203"
+    data-block="Block C"
     data-room="Room 203"
-    data-type="Double"
+    data-location="Ijanikin"
     data-capacity="2 Person"
-    data-price="₦55,000 / session"
+    data-price="₦170,000 / session"
     data-img="images/room2 (2).jpeg"
     data-bathroom="images/bathroom2.jpeg"
     data-views="images/room.jpeg">
@@ -198,10 +196,10 @@
       <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
     </div>
     <div class="room-card-body">
-      <div class="room-card-title">Block B — Room 203</div>
-      <div class="room-card-meta">Type: Double</div>
+      <div class="room-card-title">Block C — Room 203</div>
+      <div class="room-card-meta">Location: Ijanikin</div>
       <div class="room-card-meta">Capacity: 2</div>
-      <div class="room-card-price">₦55,000 / session</div>
+      <div class="room-card-price">₦170,000 / session</div>
       <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
     </div>
   </div>
@@ -210,26 +208,26 @@
     <!-- Room Card 3 -->
     <div class="col-md-4">
   <div class="room-card"
-    data-title="Block A — Room 101"
-    data-block="Block A"
-    data-room="Room 101"
-    data-type="Single"
-    data-capacity="1 Person"
-    data-price="₦85,000 / session"
+    data-title="Block C — Room 305"
+    data-block="Block C"
+    data-room="Room 305"
+    data-location="Cele Bus-Stop"
+    data-capacity="3 Person"
+    data-price="₦600,000 / session"
     data-img="images/room3.jpeg"
-    data-bathroom="images/room1-bathroom.jpeg"
-    data-views="images/room1.jpeg">
+    data-bathroom="images/bathroom3.jpeg"
+    data-views="images/room.jpeg">
 
     <div class="room-card-img">
       <img src="images/room3.jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
-      <span style="position:absolute; top:8px; left:8px;" class="badge-occupied">Occupied</span>
+      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
     </div>
     <div class="room-card-body">
       <div class="room-card-title">Block C — Room 305</div>
-      <div class="room-card-meta">Type: Suite</div>
+      <div class="room-card-meta">location: Cele Bus-Stop</div>
       <div class="room-card-meta">Capacity: 3</div>
-      <div class="room-card-price">₦125,000 / session</div>
-      <button class="room-card-btn" style="background:#dde3ec; color:#aaa;">Occupied</button>
+      <div class="room-card-price">₦600,000 / session</div>
+      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
     </div>
   </div>
 </div>
@@ -240,9 +238,9 @@
     data-title="Block A — Room 102"
     data-block="Block A"
     data-room="Room 102"
-    data-type="Single"
+    data-location="Agbara"
     data-capacity="1 Person"
-    data-price="₦85,000 / session"
+    data-price="₦140,000 / session"
     data-img="images/room4.jpeg"
     data-bathroom="images/bathroom4.jpeg"
     data-views="images/room.jpeg">
@@ -253,9 +251,9 @@
     </div>
     <div class="room-card-body">
       <div class="room-card-title">Block A — Room 102</div>
-      <div class="room-card-meta">Type: Single</div>
+      <div class="room-card-meta">location: Agbara</div>
       <div class="room-card-meta">Capacity: 1</div>
-      <div class="room-card-price">₦85,000 / session</div>
+      <div class="room-card-price">₦140,000 / session</div>
       <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
     </div>
   </div>
@@ -270,7 +268,7 @@
         </div>
         <div class="room-card-body">
           <div class="room-card-title">Block B — Room 204</div>
-          <div class="room-card-meta">Type: Double</div>
+          <div class="room-card-meta">location: London</div>
           <div class="room-card-meta">Capacity: 2</div>
           <div class="room-card-price">₦55,000 / session</div>
           <button class="room-card-btn" style="background:#dde3ec; color:#aaa;">Occupied</button>
@@ -278,35 +276,7 @@
       </div>
     </div>
 
-    <!-- Room Card 6
-    <div class="col-md-4">
-  <div class="room-card"
-    data-title="Block C — Room 306"
-    data-block="Block C"
-    data-room="Room 306"
-    data-type="Suite"
-    data-capacity="3 Person"
-    data-price="₦125,000 / session"
-    data-img="images/room1.jpeg"
-    data-bathroom="images/room1-bathroom.jpeg"
-    data-views="images/room1.jpeg">
-
-    <div class="room-card-img">
-      <img src="images/room1.jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
-      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
-    </div>
-    <div class="room-card-body">
-      <div class="room-card-title">Block C — Room 306</div>
-      <div class="room-card-meta">Type: Suite</div>
-      <div class="room-card-meta">Capacity: 3</div>
-      <div class="room-card-price">₦125,000 / session</div>
-      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
-    </div>
-  </div>
-</div>
-
-  </div>
-   -->
+  
    <!-- Room Detail Modal -->
 <div id="roomModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; overflow-y:auto; padding: 20px;">
   <div style="background:#fff; margin:20px auto; max-width:700px; width:100%; border-radius:12px; overflow:hidden;">
@@ -358,7 +328,7 @@
           <div style="font-size:13px; font-weight:500;" id="modalRoomNumber">Room 101</div>
         </div>
         <div class="col-6">
-          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Type</div>
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">location</div>
           <div style="font-size:13px; font-weight:500;" id="modalType">Single</div>
         </div>
         <div class="col-6">
@@ -375,8 +345,8 @@
         </div>
       </div>
 
-      <!-- Book Button -->
-      <a href="book-room.html" class="dash-btn-primary" style="display:block; text-align:center; padding:11px;">
+      
+      <a href="#" class="dash-btn-primary" style="display:block; text-align:center; padding:11px;">
         Book This Room
       </a>
     </div>
@@ -386,8 +356,6 @@
 </main>
     <!-- END MAIN CONTENT -->
 
-  </div>
-  <!-- END LAYOUT WRAPPER -->
 
 
   <!-- Bootstrap JS -->
@@ -398,11 +366,11 @@
   <script>
   let currentRoomImages = {};
 
-function openModal(title, block, roomNumber, type, capacity, price, roomImg, bathroomImg, viewImg) {
+function openModal(title, block, roomNumber, location, capacity, price, roomImg, bathroomImg, viewImg) {
     document.getElementById('modalRoomTitle').textContent = title;
     document.getElementById('modalBlock').textContent = block;
     document.getElementById('modalRoomNumber').textContent = roomNumber;
-    document.getElementById('modalType').textContent = type;
+    document.getElementById('modalType').textContent = location;
     document.getElementById('modalCapacity').textContent = capacity;
     document.getElementById('modalPrice').textContent = price;
     document.getElementById('roomModal').style.display = 'block';
@@ -430,7 +398,7 @@ function openModal(title, block, roomNumber, type, capacity, price, roomImg, bat
         card.dataset.title,
         card.dataset.block,
         card.dataset.room,
-        card.dataset.type,
+        card.dataset.location,
         card.dataset.capacity,
         card.dataset.price,
         card.dataset.img,
@@ -445,6 +413,7 @@ function closeModal() {
 document.getElementById('roomModal').addEventListener('click', function(e) {
     if (e.target === this) closeModal();
 });
+
 </script>
 </body>
 </html>
