@@ -54,6 +54,11 @@ hostel-templates/
 | 1. Fikile Yunus        | Pictures of rooms and bathroom  |
 | 2. Omoruyi Victor      | School logo and contact address |
 | 3. Babatunde Elizabeth | Hostel blocks and Prices        |
+| 4. Olaniyi Fawas       | A contributor🤷                 |
+| 5. Idowu Gift Donnel   | ADMIN                           |
+| 6. Peter Kuku          | Social Media contacts           |
+
+### THIS PROJECT WAS A FULL TEAM EFFORT.
 
 ---
 
