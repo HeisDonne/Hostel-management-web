@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Rooms - Lagos State University of Education Hostel</title>
+  <link rel="icon" type="image/png" href="images/logo.jpg" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="dash-body">
+
+  <!--
+       TOP BAR
+       Same on every dashboard page.
+  -->
+  <header class="dash-topbar">
+    <div class="dash-topbar-left">
+      <!-- Brand -->
+      <a href="studentdashboard.html" class="dash-brand">
+        <div class="dash-brand-icon"><img src="images/logo.jpg" alt="School Logo" style="width:32px; height:32px; object-fit:contain;" /></div>
+        <span>LASUED Hostel</span>
+      </a>
+    </div>
+    <!-- Mobile Sidebar Toggle -->
+<button class="dash-icon-btn d-lg-none" onclick="document.querySelector('.dash-sidebar').classList.toggle('open')">
+  <i class="bi bi-list"></i>
+</button>
+    <div class="dash-topbar-right">
+      <!-- Notification Bell -->
+      <button class="dash-icon-btn">
+        <i class="bi bi-bell"></i>
+      </button>
+      <!-- User Profile -->
+       <a href="profile.html" class="dash-user">
+      <div class="dash-user">
+        <div class="dash-avatar">FV</div>
+        <span class="dash-username">Fiktor Vayo</span>
+        <i class="bi bi-chevron-down" style="font-size:10px;"></i>
+      </a>
+      </div>
+    </div>
+  </header>
+  <!-- END TOP BAR -->
+
+
+  <!-- 
+       LAYOUT WRAPPER
+       Sidebar on left, content on right. Do NOT change.
+   -->
+  <div class="dash-layout">
+
+    <!-- 
+         SIDEBAR
+  -->
+    <aside class="dash-sidebar">
+      <nav class="dash-nav">
+
+        <!--  Add "active" class to the link that matches YOUR page -->
+        <a href="studentdashboard.html" class="dash-nav-link active">
+          <i class="bi bi-speedometer2"></i>
+          <span>Dashboard</span>
+        </a>
+        <a href="rooms.html" class="dash-nav-link">
+          <i class="bi bi-door-open"></i>
+          <span>Available Rooms</span>
+        </a>
+        <a href="#" class="dash-nav-link">
+          <i class="bi bi-calendar-check"></i>
+          <span>Room Booking</span>
+        </a>
+        <a href="#" class="dash-nav-link">
+          <i class="bi bi-credit-card"></i>
+          <span>Payment</span>
+        </a>
+        <a href="#" class="dash-nav-link">
+          <i class="bi bi-chat-square-text"></i>
+          <span>Complaints</span>
+        </a>
+        <a href="profile.html" class="dash-nav-link">
+          <i class="bi bi-person"></i>
+          <span>Profile</span>
+        </a>
+
+        <div class="dash-nav-divider"></div>
+
+        <a href="login.html" class="dash-nav-link dash-logout">
+          <i class="bi bi-box-arrow-left"></i>
+          <span>Logout</span>
+        </a>
+
+      </nav>
+    </aside>
+    <!-- END SIDEBAR -->
+
+
+    <!-- 
+         MAIN CONTENT
+   -->
+    <main class="dash-main">
+
+  <!-- Page Header -->
+  <div class="dash-page-header">
+    <div>
+      <h4 class="dash-page-title">Available Rooms</h4>
+      <p class="dash-page-sub">Browse and select a room that suits you.</p>
+    </div>
+  </div>
+
+  <!-- Filter Bar -->
+  <div class="dash-card mb-4">
+    <div class="dash-card-body">
+      <div class="row g-3 align-items-center">
+        <div class="col-md-3">
+          <select class="form-select">
+            <option>All Blocks</option>
+            <option>Block A</option>
+            <option>Block B</option>
+            <option>Block C</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select class="form-select">
+            <option>All Types</option>
+            <option>Single</option>
+            <option>Double</option>
+            <option>Suite</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select class="form-select">
+            <option>All Capacity</option>
+            <option>1 Person</option>
+            <option>2 Persons</option>
+            <option>3 Persons</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <input type="text" class="form-control" placeholder=" Search rooms..." />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rooms Grid -->
+  <div class="row g-4">
+
+    <!-- Room Card 1 -->
+    <div class="col-md-4">
+  <div class="room-card"
+    data-title="Block A — Room 101"
+    data-block="Block A"
+    data-room="Room 101"
+    data-location="School Campus"
+    data-capacity="1 Person"
+    data-price="₦85,000 / session"
+    data-img="images/room1.jpeg"
+    data-bathroom="images/bathroomI.jpeg"
+    data-views="images/room.jpeg">
+
+    <div class="room-card-img">
+      <img src="images/room1.jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
+      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
+    </div>
+    <div class="room-card-body">
+      <div class="room-card-title">Block A — Room 101</div>
+      <div class="room-card-meta">location: School Campus</div>
+      <div class="room-card-meta">Capacity: 1</div>
+      <div class="room-card-price">₦85,000 / session</div>
+      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Room Card 2 -->
+    <div class="col-md-4">
+  <div class="room-card"
+    data-title="Block C — Room 203"
+    data-block="Block C"
+    data-room="Room 203"
+    data-location="Ijanikin"
+    data-capacity="2 Person"
+    data-price="₦170,000 / session"
+    data-img="images/room2 (2).jpeg"
+    data-bathroom="images/bathroom2.jpeg"
+    data-views="images/room.jpeg">
+
+    <div class="room-card-img">
+      <img src="images/room2 (2).jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
+      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
+    </div>
+    <div class="room-card-body">
+      <div class="room-card-title">Block C — Room 203</div>
+      <div class="room-card-meta">Location: Ijanikin</div>
+      <div class="room-card-meta">Capacity: 2</div>
+      <div class="room-card-price">₦170,000 / session</div>
+      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Room Card 3 -->
+    <div class="col-md-4">
+  <div class="room-card"
+    data-title="Block C — Room 305"
+    data-block="Block C"
+    data-room="Room 305"
+    data-location="Cele Bus-Stop"
+    data-capacity="3 Person"
+    data-price="₦600,000 / session"
+    data-img="images/room3.jpeg"
+    data-bathroom="images/bathroom3.jpeg"
+    data-views="images/room.jpeg">
+
+    <div class="room-card-img">
+      <img src="images/room3.jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
+      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
+    </div>
+    <div class="room-card-body">
+      <div class="room-card-title">Block C — Room 305</div>
+      <div class="room-card-meta">location: Cele Bus-Stop</div>
+      <div class="room-card-meta">Capacity: 3</div>
+      <div class="room-card-price">₦600,000 / session</div>
+      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Room Card 4 -->
+    <div class="col-md-4">
+  <div class="room-card"
+    data-title="Block A — Room 102"
+    data-block="Block A"
+    data-room="Room 102"
+    data-location="Agbara"
+    data-capacity="1 Person"
+    data-price="₦140,000 / session"
+    data-img="images/room4.jpeg"
+    data-bathroom="images/bathroom4.jpeg"
+    data-views="images/room.jpeg">
+
+    <div class="room-card-img">
+      <img src="images/room4.jpeg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
+      <span style="position:absolute; top:8px; left:8px;" class="badge-available">Available</span>
+    </div>
+    <div class="room-card-body">
+      <div class="room-card-title">Block A — Room 102</div>
+      <div class="room-card-meta">location: Agbara</div>
+      <div class="room-card-meta">Capacity: 1</div>
+      <div class="room-card-price">₦140,000 / session</div>
+      <button class="room-card-btn" onclick="openFromCard(this)">View Details</button>
+    </div>
+  </div>
+</div>
+
+    <!-- Room Card 5 -->
+    <div class="col-md-4">
+      <div class="room-card">
+        <div class="room-card-img">
+          <img src="images/room.jpg" alt="Room" style="width:100%; height:100%; object-fit:cover;" />
+          <span style="position:absolute; top:8px; left:8px;" class="badge-occupied">Occupied</span>
+        </div>
+        <div class="room-card-body">
+          <div class="room-card-title">Block B — Room 204</div>
+          <div class="room-card-meta">location: London</div>
+          <div class="room-card-meta">Capacity: 2</div>
+          <div class="room-card-price">₦55,000 / session</div>
+          <button class="room-card-btn" style="background:#dde3ec; color:#aaa;">Occupied</button>
+        </div>
+      </div>
+    </div>
+
+  
+   <!-- Room Detail Modal -->
+<div id="roomModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); z-index:9999; overflow-y:auto; padding: 20px;">
+  <div style="background:#fff; margin:20px auto; max-width:700px; width:100%; border-radius:12px; overflow:hidden;">
+    
+    <!-- Modal Header -->
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 20px; border-bottom:1px solid #e0e0e0;">
+      <h5 style="margin:0; font-size:16px; font-weight:600;" id="modalRoomTitle">Block A — Room 101</h5>
+      <span onclick="closeModal()" style="cursor:pointer; font-size:20px; color:#888;">&times;</span>
+    </div>
+
+    <!-- Modal Image Gallery -->
+    <div style="position:relative;">
+      <img id="modalMainImage" src=" " alt="Room" style="width:100%; height:300px; object-fit:contain; background: #f0f0f0;" />
+      <!-- Thumbnail strip -->
+      <!-- Image Gallery Section -->
+      <div style="display:flex; gap:8px; padding:10px 16px; background:#f5f6fa;">
+  
+  <!-- Room Image -->
+<div style="flex:1; cursor:pointer;" onclick="document.getElementById('modalMainImage').src=currentRoomImages.room; document.getElementById('thumbRoom').style.border='2px solid #1976d2'; document.getElementById('thumbBathroom').style.border='2px solid transparent'; document.getElementById('thumbViews').style.border='2px solid transparent';">
+  <img id="thumbRoom" src="" style="width:100%; height:70px; object-fit:cover; border-radius:6px; border:2px solid #1976d2;" />
+  <p style="font-size:10px; text-align:center; color:#888; margin-top:4px;">Room</p>
+</div>
+
+<!-- Bathroom Image -->
+<div style="flex:1; cursor:pointer;" onclick="document.getElementById('modalMainImage').src=currentRoomImages.bathroom; document.getElementById('thumbRoom').style.border='2px solid transparent'; document.getElementById('thumbBathroom').style.border='2px solid #1976d2'; document.getElementById('thumbViews').style.border='2px solid transparent';">
+  <img id="thumbBathroom" src="" style="width:100%; height:70px; object-fit:cover; border-radius:6px; border:2px solid transparent;" />
+  <p style="font-size:10px; text-align:center; color:#888; margin-top:4px;">Bathroom</p>
+</div>
+
+<!-- Other View -->
+<div style="flex:1; cursor:pointer;" onclick="document.getElementById('modalMainImage').src=currentRoomImages.views; document.getElementById('thumbRoom').style.border='2px solid transparent'; document.getElementById('thumbBathroom').style.border='2px solid transparent'; document.getElementById('thumbViews').style.border='2px solid #1976d2';">
+  <img id="thumbViews" src="" style="width:100%; height:70px; object-fit:cover; border-radius:6px; border:2px solid transparent;" />
+  <p style="font-size:10px; text-align:center; color:#888; margin-top:4px;">Other View</p>
+</div>
+
+</div>
+     
+    </div>
+
+    <!-- Modal Room Details -->
+    <div style="padding:20px;">
+      <div class="row g-3 mb-3">
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Block</div>
+          <div style="font-size:13px; font-weight:500;" id="modalBlock">Block A</div>
+        </div>
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Room Number</div>
+          <div style="font-size:13px; font-weight:500;" id="modalRoomNumber">Room 101</div>
+        </div>
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">location</div>
+          <div style="font-size:13px; font-weight:500;" id="modalType">Single</div>
+        </div>
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Capacity</div>
+          <div style="font-size:13px; font-weight:500;" id="modalCapacity">1 Person</div>
+        </div>
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Price</div>
+          <div style="font-size:13px; font-weight:600; color:#1976d2;" id="modalPrice">₦85,000 / session</div>
+        </div>
+        <div class="col-6">
+          <div style="font-size:11px; color:#888; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:3px;">Status</div>
+          <span class="badge-available" id="modalStatus">Available</span>
+        </div>
+      </div>
+
+      
+      <a href="#" class="dash-btn-primary" style="display:block; text-align:center; padding:11px;">
+        Book This Room
+      </a>
+    </div>
+
+  </div>
+</div>
+</main>
+    <!-- END MAIN CONTENT -->
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+  <script>
+  let currentRoomImages = {};
+
+function openModal(title, block, roomNumber, location, capacity, price, roomImg, bathroomImg, viewImg) {
+    document.getElementById('modalRoomTitle').textContent = title;
+    document.getElementById('modalBlock').textContent = block;
+    document.getElementById('modalRoomNumber').textContent = roomNumber;
+    document.getElementById('modalType').textContent = location;
+    document.getElementById('modalCapacity').textContent = capacity;
+    document.getElementById('modalPrice').textContent = price;
+    document.getElementById('roomModal').style.display = 'block';
+
+    // Store images
+    currentRoomImages = {
+        room: roomImg,
+        bathroom: bathroomImg,
+        views: viewImg
+    };
+
+    // Fill thumbnail images
+    document.getElementById('thumbRoom').src = roomImg;
+    document.getElementById('thumbBathroom').src = bathroomImg;
+    document.getElementById('thumbViews').src = viewImg;
+
+    // Set main image to room by default
+    document.getElementById('modalMainImage').src = roomImg;
+    document.getElementById('modalMainImage').style.display = 'block';
+}
+
+   function openFromCard(btn) {
+    const card = btn.closest('.room-card');
+    openModal(
+        card.dataset.title,
+        card.dataset.block,
+        card.dataset.room,
+        card.dataset.location,
+        card.dataset.capacity,
+        card.dataset.price,
+        card.dataset.img,
+        card.dataset.bathroom,
+        card.dataset.views
+    );
+}
+function closeModal() {
+    document.getElementById('roomModal').style.display = 'none';
+}
+
+document.getElementById('roomModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+});
+
+</script>
+</body>
+</html>
